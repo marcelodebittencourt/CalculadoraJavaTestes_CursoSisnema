@@ -25,4 +25,9 @@ class CalculadoraTeste {
 		assertEquals(4, calc.substracao(9, 5));
 	}
 
+	@Test
+	void testSubstracaoNumerosNegativos_ResultadoNegativo() {
+		assertEquals(-1, calc.substracao(-3, -2));
+	}
+	
 }
