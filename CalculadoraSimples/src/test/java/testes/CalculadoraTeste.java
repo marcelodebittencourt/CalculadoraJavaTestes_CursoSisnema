@@ -1,3 +1,4 @@
+package testes;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
@@ -21,13 +22,23 @@ class CalculadoraTeste {
 	}
 
 	@Test
-	void testSubstracaoNumerosPositivos_ResultadoPositivo() {
+	void testSubstracao_NumerosPositivos_ResultadoPositivo() {
 		assertEquals(4, calc.substracao(9, 5));
 	}
 
 	@Test
-	void testSubstracaoNumerosNegativos_ResultadoNegativo() {
+	void testSubstracao_NumerosNegativos_ResultadoNegativo() {
 		assertEquals(-1, calc.substracao(-3, -2));
 	}
+	
+	@Test
+	void testMultiplicacaoNumerosPositivos_ResultadoPositivo() {
+		assertEquals(15, calc.multiplicacao(5, 3));
+	}
+	
+	@Test
+	void testDivisaoNumerosPositivos_ResultadoPositivo() {
+		assertEquals(2, calc.divisao(8, 4));
+	}		
 	
 }
