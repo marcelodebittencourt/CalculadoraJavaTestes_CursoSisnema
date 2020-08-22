@@ -41,4 +41,19 @@ class CalculadoraTeste {
 		assertEquals(2, calc.divisao(8, 4));
 	}		
 	
+	@Test
+	void testDivisaoPorZero_ResultadoInvalido() {
+		try {
+			assertEquals(0, calc.divisao(5, 0));
+		} catch( ArithmeticException ae ) {
+			System.out.println("Impossível realizar divisão por zero");
+			ae.printStackTrace();
+		} catch( Exception e ) {
+			System.out.println("Erro genérico");
+			e.printStackTrace();
+		}
+		
+	}		
+	
+	
 }
